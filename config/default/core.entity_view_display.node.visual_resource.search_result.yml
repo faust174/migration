@@ -1,0 +1,60 @@
+uuid: ac0dbe1e-57e7-463f-bb02-e0d716ce8475
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.visual_resource.field_description
+    - field.field.node.visual_resource.field_eras
+    - field.field.node.visual_resource.field_image
+    - field.field.node.visual_resource.field_regions
+    - field.field.node.visual_resource.field_source_name
+    - field.field.node.visual_resource.field_topics
+    - field.field.node.visual_resource.field_visual_resource_collection
+    - image.style.thumbnail
+    - node.type.visual_resource
+  module:
+    - image
+    - user
+id: node.visual_resource.search_result
+targetEntityType: node
+bundle: visual_resource
+mode: search_result
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_source_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_visual_resource_collection:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_eras: true
+  field_regions: true
+  field_topics: true

@@ -1,0 +1,26 @@
+uuid: 63eb91a2-0395-460b-a7ff-bd53183cfb9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.video
+    - taxonomy.vocabulary.eras
+id: node.video.field_eras
+field_name: field_eras
+entity_type: node
+bundle: video
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      eras: eras
+    sort:
+      field: _none
+field_type: entity_reference

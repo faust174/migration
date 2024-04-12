@@ -43,10 +43,10 @@ sites/simpletest
 web/modules/contrib
 web/themes/contrib
 web/libraries
+web/sites/default/files
 web/core
 .idea
 .cache
-
 
 
 

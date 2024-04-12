@@ -1,0 +1,23 @@
+uuid: 91bb46af-3553-4828-b4f3-730e7ec2ce2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_year
+    - node.type.battle
+id: node.battle.field_end_year
+field_name: field_end_year
+entity_type: node
+bundle: battle
+label: 'End Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,26 @@
+uuid: 2c75b86a-a3b5-4e4e-805c-0f982b384e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regions
+    - node.type.battle
+    - taxonomy.vocabulary.region
+id: node.battle.field_regions
+field_name: field_regions
+entity_type: node
+bundle: battle
+label: Regions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: _none
+field_type: entity_reference

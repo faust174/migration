@@ -1,0 +1,37 @@
+uuid: 72631f99-bd5f-48fd-b8fe-9333bb941acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_information
+    - node.type.article
+    - node.type.battle
+    - node.type.biography
+    - node.type.country
+    - node.type.timeline_event
+id: node.timeline_event.field_more_information
+field_name: field_more_information
+entity_type: node
+bundle: timeline_event
+label: 'More Information'
+description: 'Search for a related item from eHistory that provides more information on this event. This may be an article, biography, battle, country, or related timeline event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      battle: battle
+      biography: biography
+      country: country
+      timeline_event: timeline_event
+    sort:
+      field: title
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

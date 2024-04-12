@@ -1,0 +1,27 @@
+uuid: 98b73b2c-fc28-4ffb-929d-22a044d2d76c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download
+    - node.type.exhibition
+  module:
+    - file
+id: node.exhibition.field_download
+field_name: field_download
+entity_type: node
+bundle: exhibition
+label: 'Click below to listen to audio.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: mp3
+  file_extensions: mp3
+  max_filesize: '50 MB'
+  description_field: false
+field_type: file

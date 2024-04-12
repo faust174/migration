@@ -1,0 +1,23 @@
+uuid: b24d3a86-b3bd-4259-9ba3-0a1d012510c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_year
+    - node.type.battle
+id: node.battle.field_start_year
+field_name: field_start_year
+entity_type: node
+bundle: battle
+label: 'Start Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

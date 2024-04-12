@@ -1,0 +1,27 @@
+uuid: 52dfda53-3cee-41f9-89fa-bfdffdbfe7ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_file
+    - node.type.exhibition
+  module:
+    - file
+id: node.exhibition.field_download_file
+field_name: field_download_file
+entity_type: node
+bundle: exhibition
+label: 'Download file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,23 @@
+uuid: 993a8394-72c0-476d-b466-c493d903eee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_show_page
+    - taxonomy.vocabulary.topics
+id: taxonomy_term.topics.field_show_page
+field_name: field_show_page
+entity_type: taxonomy_term
+bundle: topics
+label: 'Show Page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

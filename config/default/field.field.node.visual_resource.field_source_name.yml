@@ -1,0 +1,19 @@
+uuid: 4358dba4-b5d9-437b-b0c1-8e0272a685e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_name
+    - node.type.visual_resource
+id: node.visual_resource.field_source_name
+field_name: field_source_name
+entity_type: node
+bundle: visual_resource
+label: 'Source Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

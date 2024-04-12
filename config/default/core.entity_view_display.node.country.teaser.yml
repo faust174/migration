@@ -1,0 +1,52 @@
+uuid: b986676f-0828-4c29-b7a8-a233a5950255
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.country.body
+    - field.field.node.country.field_ethnicity
+    - field.field.node.country.field_map
+    - field.field.node.country.field_population
+    - field.field.node.country.field_regions
+    - field.field.node.country.field_religion
+    - image.style.medium
+    - node.type.country
+  module:
+    - image
+    - text
+    - user
+id: node.country.teaser
+targetEntityType: node
+bundle: country
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_map:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ethnicity: true
+  field_population: true
+  field_regions: true
+  field_religion: true

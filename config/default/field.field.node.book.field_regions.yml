@@ -1,0 +1,26 @@
+uuid: 8c98746f-1478-46c5-98ce-e8a861a05310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regions
+    - node.type.book
+    - taxonomy.vocabulary.region
+id: node.book.field_regions
+field_name: field_regions
+entity_type: node
+bundle: book
+label: Regions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: _none
+field_type: entity_reference

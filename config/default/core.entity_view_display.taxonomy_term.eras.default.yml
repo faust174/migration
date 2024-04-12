@@ -1,0 +1,30 @@
+uuid: cdace747-7bf6-48bb-898e-17507f6a6dd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.eras.field_show_page
+    - taxonomy.vocabulary.eras
+  module:
+    - options
+    - text
+id: taxonomy_term.eras.default
+targetEntityType: taxonomy_term
+bundle: eras
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_show_page:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

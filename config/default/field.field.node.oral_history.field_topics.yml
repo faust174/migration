@@ -1,0 +1,26 @@
+uuid: 5f7856b4-237c-4ce8-bed8-32934865d539
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.oral_history
+    - taxonomy.vocabulary.topics
+id: node.oral_history.field_topics
+field_name: field_topics
+entity_type: node
+bundle: oral_history
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: _none
+field_type: entity_reference

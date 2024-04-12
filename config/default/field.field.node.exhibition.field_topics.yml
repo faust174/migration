@@ -1,0 +1,26 @@
+uuid: 6a1980e9-3a0b-44bd-9731-22e45ed83dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.exhibition
+    - taxonomy.vocabulary.topics
+id: node.exhibition.field_topics
+field_name: field_topics
+entity_type: node
+bundle: exhibition
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: _none
+field_type: entity_reference

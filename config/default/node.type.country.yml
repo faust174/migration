@@ -1,0 +1,16 @@
+uuid: 03ed9397-2f3e-45ce-991a-beb353c9bdb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Country
+type: country
+description: 'Country records'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

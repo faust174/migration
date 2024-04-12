@@ -1,0 +1,125 @@
+uuid: d41464d9-1206-40e5-8116-ef4cbc4ce012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.battle.body
+    - field.field.node.battle.field_campaign
+    - field.field.node.battle.field_end_date
+    - field.field.node.battle.field_end_year
+    - field.field.node.battle.field_legacy_id
+    - field.field.node.battle.field_location
+    - field.field.node.battle.field_outcome
+    - field.field.node.battle.field_regions
+    - field.field.node.battle.field_source_name
+    - field.field.node.battle.field_start_date
+    - field.field.node.battle.field_start_year
+    - field.field.node.battle.field_topics
+    - node.type.battle
+  module:
+    - datetime
+    - text
+    - user
+id: node.battle.default
+targetEntityType: node
+bundle: battle
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_campaign:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_end_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_end_year:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_location:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_outcome:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_regions:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_source_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_start_year:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_legacy_id: true

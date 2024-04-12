@@ -11,12 +11,11 @@ migration_tags:
   - Content
 migration_group: migrate_drupal_7
 label: 'Node complete (Battle)'
-
 source:
   plugin: d7_node_complete
   node_type: battle
   constants:
-    format: 'full_html'
+    format: full_html
 process:
   nid:
     -
@@ -75,16 +74,11 @@ process:
     -
       plugin: get
       source: source_langcode
-  comment_node_battle/0/status:
-    -
-      plugin: get
-      source: comment
   body:
     -
-      plugin: get
+      plugin: custom_link_plugin
       source: body
   body/0/format: constants/format
-
   field_source_name:
     -
       plugin: get

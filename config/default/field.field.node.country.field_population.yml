@@ -1,0 +1,19 @@
+uuid: 7dabfd1a-713c-4794-85a6-f4aca3e16bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_population
+    - node.type.country
+id: node.country.field_population
+field_name: field_population
+entity_type: node
+bundle: country
+label: Population
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

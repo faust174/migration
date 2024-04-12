@@ -1,0 +1,26 @@
+uuid: 568b8978-d841-4988-ad48-dc40bd2e7067
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.biography
+    - taxonomy.vocabulary.topics
+id: node.biography.field_topics
+field_name: field_topics
+entity_type: node
+bundle: biography
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: _none
+field_type: entity_reference
