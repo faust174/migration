@@ -1,0 +1,5 @@
+name: 'Migration'
+type: module
+description: 'Custom module for migration'
+core_version_requirement: ^10
+package: Custom
