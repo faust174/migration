@@ -14,20 +14,29 @@ use Drupal\migrate\Row;
  * )
  */
 class CustomLinkPlugin extends ProcessPluginBase {
-
   /**
    * {@inheritdoc}
    */
-  public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    $callback = function ($matches) {
-      $url = $matches[2];
-      $modified_url = str_replace('ehistory.osu.edu', '', $url);
-      return $matches[1] . $modified_url . $matches[3];
-    };
+  public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property): array
+  {
+    if (!empty($value['value'])) {
+      $dom = new \DOMDocument();
+      $dom->loadHTML($value['value']);
+      $anchors = $dom->getElementsByTagName('a');
+      foreach ($anchors as $anchor) {
+        $href = $anchor->getAttribute('href');
+        $href = str_replace('http://ehistory.osu.edu', '', $href);
+        $is_valid = \Drupal::pathValidator()->isValid($href);
+        if ($is_valid) {
+          $anchor->setAttribute('href', $href);
+        } else {
+          $anchor->removeAttribute('href');
+        }
+      }
 
-    $pattern = '/(<a[^>]+href=["\'])([^"\']+ehistory\.osu\.edu\/[^"\']*)(["\'][^>]*>)/i';
+      $value['value'] = $dom->saveHTML();
+    }
 
-    return preg_replace_callback($pattern, $callback, $value);
+    return $value;
   }
-
 }

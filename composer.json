@@ -22,7 +22,8 @@
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/pathauto": "^1.12",
-        "drush/drush": "^12.5"
+        "drush/drush": "^12.5",
+        "ext-dom": "*"
     },
     "conflict": {
         "drupal/drupal": "*"
