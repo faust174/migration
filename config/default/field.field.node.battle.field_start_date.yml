@@ -1,0 +1,21 @@
+uuid: c594d1f4-39e0-491e-bea3-9dd8e6ab67ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.battle
+  module:
+    - datetime
+id: node.battle.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: battle
+label: 'Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

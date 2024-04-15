@@ -1,0 +1,16 @@
+uuid: 871faae4-cbe3-4a81-ac6a-3ce6fe54993b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: 'Visual Resource'
+type: visual_resource
+description: 'Maps & Images'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

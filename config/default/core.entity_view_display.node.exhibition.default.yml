@@ -1,0 +1,64 @@
+uuid: faef9611-5322-4b7d-8edd-3178ff0e3aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.exhibition.body
+    - field.field.node.exhibition.field_download
+    - field.field.node.exhibition.field_download_file
+    - field.field.node.exhibition.field_download_pdf
+    - field.field.node.exhibition.field_eras
+    - field.field.node.exhibition.field_image
+    - field.field.node.exhibition.field_regions
+    - field.field.node.exhibition.field_topics
+    - node.type.exhibition
+  module:
+    - file
+    - text
+    - user
+id: node.exhibition.default
+targetEntityType: node
+bundle: exhibition
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_download:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_download_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_download_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_eras: true
+  field_image: true
+  field_regions: true
+  field_topics: true

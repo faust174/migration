@@ -1,0 +1,39 @@
+id: media_migration
+label: 'Migrating files to media'
+migration_group: migrate_drupal_7
+source:
+  plugin: d7_file
+  schema: public
+  constants:
+    source_base_path: ''
+process:
+  temp1:
+    plugin: get
+    method: row
+    not_equals: true
+    value:
+      - image/png
+      - image/jpg
+      - image/jpeg
+    source: filemime
+
+  field_media_image/target_id:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_file
+      source: fid
+    -
+      plugin: skip_on_empty
+      method: row
+
+  status: status
+  created: timestamp
+  changed: timestamp
+
+destination:
+  plugin: 'entity:media'
+  default_bundle: image
+migration_dependencies:
+  required:
+    - upgrade_d7_file
+  optional: {}

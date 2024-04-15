@@ -1,0 +1,26 @@
+uuid: 4ab0445a-c9e5-4cb6-9d38-73b9aa302b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.timeline_event
+    - taxonomy.vocabulary.topics
+id: node.timeline_event.field_topics
+field_name: field_topics
+entity_type: node
+bundle: timeline_event
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: _none
+field_type: entity_reference

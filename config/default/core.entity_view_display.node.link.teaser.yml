@@ -1,0 +1,40 @@
+uuid: 0196a643-c1e4-4e8a-919e-6ccbe7209aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link.field_eras
+    - field.field.node.link.field_regions
+    - field.field.node.link.field_topics
+    - field.field.node.link.field_url
+    - node.type.link
+  module:
+    - link
+    - user
+id: node.link.teaser
+targetEntityType: node
+bundle: link
+mode: teaser
+content:
+  field_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_eras: true
+  field_regions: true
+  field_topics: true

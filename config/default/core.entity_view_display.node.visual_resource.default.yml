@@ -1,0 +1,74 @@
+uuid: 77db8ea5-00d9-40d6-b130-29f91f102613
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.visual_resource.field_description
+    - field.field.node.visual_resource.field_eras
+    - field.field.node.visual_resource.field_image
+    - field.field.node.visual_resource.field_regions
+    - field.field.node.visual_resource.field_source_name
+    - field.field.node.visual_resource.field_topics
+    - field.field.node.visual_resource.field_visual_resource_collection
+    - node.type.visual_resource
+  module:
+    - user
+id: node.visual_resource.default
+targetEntityType: node
+bundle: visual_resource
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_eras:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_regions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_source_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_visual_resource_collection:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image: true

@@ -1,0 +1,23 @@
+uuid: 76e2beb7-3cfa-45ce-b6f3-b7d02a68f240
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_download_file
+field_name: field_download_file
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

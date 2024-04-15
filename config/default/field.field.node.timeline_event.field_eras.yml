@@ -1,0 +1,26 @@
+uuid: c4068b28-2001-4c9a-8dc4-ad98e129f214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.timeline_event
+    - taxonomy.vocabulary.eras
+id: node.timeline_event.field_eras
+field_name: field_eras
+entity_type: node
+bundle: timeline_event
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      eras: eras
+    sort:
+      field: _none
+field_type: entity_reference

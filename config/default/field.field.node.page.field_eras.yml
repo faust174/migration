@@ -1,0 +1,26 @@
+uuid: 84c4465f-f0c1-45c8-9c92-c737cd7271f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.page
+    - taxonomy.vocabulary.eras
+id: node.page.field_eras
+field_name: field_eras
+entity_type: node
+bundle: page
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      eras: eras
+    sort:
+      field: _none
+field_type: entity_reference

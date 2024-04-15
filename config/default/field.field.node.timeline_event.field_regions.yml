@@ -1,0 +1,26 @@
+uuid: a83ee49d-da2b-48b8-bd8e-fee954801d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regions
+    - node.type.timeline_event
+    - taxonomy.vocabulary.region
+id: node.timeline_event.field_regions
+field_name: field_regions
+entity_type: node
+bundle: timeline_event
+label: Regions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: _none
+field_type: entity_reference

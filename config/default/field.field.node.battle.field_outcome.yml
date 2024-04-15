@@ -1,0 +1,19 @@
+uuid: ec2cfbc3-d016-4d59-9e3b-4eff453a4894
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_outcome
+    - node.type.battle
+id: node.battle.field_outcome
+field_name: field_outcome
+entity_type: node
+bundle: battle
+label: Outcome
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

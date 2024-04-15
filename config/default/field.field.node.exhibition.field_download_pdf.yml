@@ -1,0 +1,27 @@
+uuid: 63f8a7b1-c8c8-4418-baed-83695636d931
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_pdf
+    - node.type.exhibition
+  module:
+    - file
+id: node.exhibition.field_download_pdf
+field_name: field_download_pdf
+entity_type: node
+bundle: exhibition
+label: 'Download pdf'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt docx doc pdf ppt pptx'
+  max_filesize: ''
+  description_field: false
+field_type: file

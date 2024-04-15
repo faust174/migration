@@ -1,0 +1,8 @@
+uuid: 1735b085-428e-42a0-a031-dcf6a91fcf4e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Visual Resource Collection'
+vid: visual_resource_collection
+description: 'Visual Resource Collection'
+weight: -6

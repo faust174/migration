@@ -1,0 +1,26 @@
+uuid: 4742afd6-30a1-4a11-9013-26fed2f77b98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regions
+    - node.type.video
+    - taxonomy.vocabulary.region
+id: node.video.field_regions
+field_name: field_regions
+entity_type: node
+bundle: video
+label: Regions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: _none
+field_type: entity_reference

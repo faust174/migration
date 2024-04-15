@@ -1,0 +1,19 @@
+uuid: 2598ef12-3ad8-433e-93ae-6e421505c013
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.oral_history
+id: node.oral_history.field_subject
+field_name: field_subject
+entity_type: node
+bundle: oral_history
+label: Subject
+description: 'Person who is the focus or teller of the Oral History'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

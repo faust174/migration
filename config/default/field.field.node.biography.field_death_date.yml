@@ -1,0 +1,19 @@
+uuid: e2b5e03d-4faa-46d7-83b2-76b71cc8cc89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_death_date
+    - node.type.biography
+id: node.biography.field_death_date
+field_name: field_death_date
+entity_type: node
+bundle: biography
+label: 'Death Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

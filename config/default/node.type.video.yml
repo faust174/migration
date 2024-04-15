@@ -1,0 +1,18 @@
+uuid: 697fac57-261e-4389-9712-c8afeea03dbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Video & Podcasts'
+type: video
+description: 'Video or podcast resources.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

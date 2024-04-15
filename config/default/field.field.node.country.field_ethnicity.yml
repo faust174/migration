@@ -1,0 +1,19 @@
+uuid: ae7f5e28-c002-4713-9b35-ce16a8b6fc80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ethnicity
+    - node.type.country
+id: node.country.field_ethnicity
+field_name: field_ethnicity
+entity_type: node
+bundle: country
+label: Ethnicity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

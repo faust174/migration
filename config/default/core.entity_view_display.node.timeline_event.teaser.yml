@@ -1,0 +1,30 @@
+uuid: 57121b40-9524-442f-aa9a-847605c4af91
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timeline_event.field_eras
+    - field.field.node.timeline_event.field_more_information
+    - field.field.node.timeline_event.field_regions
+    - field.field.node.timeline_event.field_timeline_category
+    - field.field.node.timeline_event.field_topics
+    - node.type.timeline_event
+  module:
+    - user
+id: node.timeline_event.teaser
+targetEntityType: node
+bundle: timeline_event
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_eras: true
+  field_more_information: true
+  field_regions: true
+  field_timeline_category: true
+  field_topics: true

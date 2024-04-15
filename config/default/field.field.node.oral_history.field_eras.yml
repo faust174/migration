@@ -1,0 +1,26 @@
+uuid: f3503b55-9dd6-4cb5-a523-cb20359e7728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.oral_history
+    - taxonomy.vocabulary.eras
+id: node.oral_history.field_eras
+field_name: field_eras
+entity_type: node
+bundle: oral_history
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      eras: eras
+    sort:
+      field: _none
+field_type: entity_reference

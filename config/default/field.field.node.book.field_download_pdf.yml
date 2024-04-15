@@ -1,0 +1,27 @@
+uuid: d8641cf0-fd47-4e81-b969-d978ee3a6707
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_pdf
+    - node.type.book
+  module:
+    - file
+id: node.book.field_download_pdf
+field_name: field_download_pdf
+entity_type: node
+bundle: book
+label: 'Download pdf'
+description: 'This area allows for a link to a downloadable pdf version of the document.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf jpg doc docx'
+  max_filesize: ''
+  description_field: true
+field_type: file
